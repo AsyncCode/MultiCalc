@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/PageBackground">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnFunction"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/ButtonNormal"
+            android:text="函数"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/btnConstant"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/ButtonNormal"
+            android:text="常数"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnNew"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/ButtonNormal"
+        android:text="新建"
+        android:textSize="25sp" />
+
+    <FrameLayout
+        android:id="@+id/fragmentField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btnNew"
+        android:layout_below="@id/linearLayout" />
+
+</RelativeLayout>

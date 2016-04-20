@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.example.multicalc.basic_calc.ui.LargeEditText
+        android:id="@+id/mainEditText"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4.2"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <com.example.multicalc.basic_calc.ui.KeyboardButton
+            android:id="@+id/btnEnter"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/btn_enter" />
+
+        <com.example.multicalc.basic_calc.ui.KeyboardButton
+            android:id="@+id/btnGoLeft"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/btn_go_left" />
+
+        <com.example.multicalc.basic_calc.ui.KeyboardButton
+            android:id="@+id/btnGoRight"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/btn_go_right" />
+
+        <com.example.multicalc.basic_calc.ui.KeyboardButton
+            android:id="@+id/btnClear"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/btn_clear" />
+
+        <com.example.multicalc.basic_calc.ui.KeyboardButton
+            android:id="@+id/btnDelete"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/btn_delete" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/rowFun1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <com.example.multicalc.basic_calc.ui.KeyboardButton
+            android:id="@+id/btnSin"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/btn_sin" />
+
+        <com.example.multicalc.basic_calc.ui.KeyboardButton
+            android:id="@+id/btnCos"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/btn_cos" />
+
+        <com.example.multicalc.basic_calc.ui.KeyboardButton
+            android:id="@+id/btnTan"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/btn_tan" />
+
+        <com.example.multicalc.basic_calc.ui.KeyboardButton
+            android:id="@+id/btnConj"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/btn_conj" />
+
+        <com.example.multicalc.basic_calc.ui.KeyboardButton
+            android:id="@+id/btnShift1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/btn_shift" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rowFun2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <com.example.multicalc.basic_calc.ui.KeyboardButton
+            android:id="@+id/btnRe"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/btn_re" />
+
+        <com.example.multicalc.basic_calc.ui.KeyboardButton
+            android:id="@+id/btnIm"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/btn_im" />
+
+        <com.example.multicalc.basic_calc.ui.KeyboardButton
+            android:id="@+id/btnAbs"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/btn_abs" />
+
+        <com.example.multicalc.basic_calc.ui.KeyboardButton
+            android:id="@+id/btnArg"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/btn_arg" />
+
+        <com.example.multicalc.basic_calc.ui.KeyboardButton
+            android:id="@+id/btnShift2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/btn_shift" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <com.example.multicalc.basic_calc.ui.KeyboardButton
+            android:id="@+id/btnLn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/btn_ln" />
+
+        <com.example.multicalc.basic_calc.ui.KeyboardButton
+            android:id="@+id/btnSolarSign"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/btn_solar_sign" />
+
+        <com.example.multicalc.basic_calc.ui.KeyboardButton
+            android:id="@+id/btnPi"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/btn_pi" />
+
+        <com.example.multicalc.basic_calc.ui.KeyboardButton
+            android:id="@+id/btnNaturalCon"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/btn_natural_con" />
+
+        <com.example.multicalc.basic_calc.ui.KeyboardButton
+            android:id="@+id/btnI"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/btn_i" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <com.example.multicalc.basic_calc.ui.KeyboardButton
+            android:id="@+id/btnBrackets"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/btn_brackets" />
+
+        <com.example.multicalc.basic_calc.ui.KeyboardButton
+            android:id="@+id/btnOne"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/btn_one" />
+
+        <com.example.multicalc.basic_calc.ui.KeyboardButton
+            android:id="@+id/btnTwo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/btn_two" />
+
+        <com.example.multicalc.basic_calc.ui.KeyboardButton
+            android:id="@+id/btnThree"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/btn_three" />
+
+        <com.example.multicalc.basic_calc.ui.KeyboardButton
+            android:id="@+id/btnAddition"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/btn_addition" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <com.example.multicalc.basic_calc.ui.KeyboardButton
+            android:id="@+id/btnMExpIM"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/btn_m_exp_im" />
+
+        <com.example.multicalc.basic_calc.ui.KeyboardButton
+            android:id="@+id/btnFour"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/btn_four" />
+
+        <com.example.multicalc.basic_calc.ui.KeyboardButton
+            android:id="@+id/btnFive"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/btn_five" />
+
+        <com.example.multicalc.basic_calc.ui.KeyboardButton
+            android:id="@+id/btnSix"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/btn_six" />
+
+        <com.example.multicalc.basic_calc.ui.KeyboardButton
+            android:id="@+id/btnSubtraction"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/btn_subtraction" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <com.example.multicalc.basic_calc.ui.KeyboardButton
+            android:id="@+id/btnPow"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/btn_pow" />
+
+        <com.example.multicalc.basic_calc.ui.KeyboardButton
+            android:id="@+id/btnSeven"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/btn_seven" />
+
+        <com.example.multicalc.basic_calc.ui.KeyboardButton
+            android:id="@+id/btnEight"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/btn_eight" />
+
+        <com.example.multicalc.basic_calc.ui.KeyboardButton
+            android:id="@+id/btnNine"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/btn_nine" />
+
+        <com.example.multicalc.basic_calc.ui.KeyboardButton
+            android:id="@+id/btnMultiplication"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/btn_multiplication_1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <com.example.multicalc.basic_calc.ui.KeyboardButton
+            android:id="@+id/btnRoot"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/btn_root" />
+
+        <com.example.multicalc.basic_calc.ui.KeyboardButton
+            android:id="@+id/btnPoint"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/btn_point" />
+
+        <com.example.multicalc.basic_calc.ui.KeyboardButton
+            android:id="@+id/btnZero"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/btn_zero" />
+
+        <com.example.multicalc.basic_calc.ui.KeyboardButton
+            android:id="@+id/btnEquality"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/btn_equality" />
+
+        <com.example.multicalc.basic_calc.ui.KeyboardButton
+            android:id="@+id/btnDivision"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/btn_division_1" />
+
+    </LinearLayout>
+
+</LinearLayout>

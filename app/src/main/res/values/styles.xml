@@ -1,0 +1,29 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="actionBarStyle">@style/AppTheme.ActionBar</item>
+
+        <item name="actionModeStyle">@style/AppTheme.ActionMode</item>
+    </style>
+
+    <style name="AppTheme.ActionBar" parent="Widget.AppCompat.ActionBar">
+
+        <item name="height">@dimen/actionbar_height</item>
+
+        <item name="background">@color/colorPrimary</item>
+
+    </style>
+
+    <style name="AppTheme.ActionMode" parent="Widget.AppCompat.ActionMode">
+
+        <item name="background">@color/colorPrimaryDark</item>
+
+        <item name="height">@dimen/actionbar_height</item>
+
+    </style>
+
+</resources>

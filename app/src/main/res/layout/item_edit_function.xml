@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp">
+
+    <TextView
+        android:id="@+id/tvDeclaration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:paddingEnd="20dp"
+        android:paddingStart="30dp"
+        android:textColor="#ffcc3333"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/tvExpression"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="start"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp"
+        android:textColor="#ff802a2a"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="start"
+        android:gravity="end"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp"
+        android:textColor="#ff191970"
+        android:textSize="20sp" />
+
+</LinearLayout>

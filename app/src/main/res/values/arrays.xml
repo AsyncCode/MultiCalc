@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="angular_unit">
+        <item>弧度制</item>
+        <item>角度制</item>
+    </string-array>
+
+    <string-array name="result_format">
+        <item>一般形式</item>
+        <item>分数形式</item>
+        <item>科学计数法</item>
+    </string-array>
+
+
+    <string-array name="complex_angular_unit">
+        <item>弧度制</item>
+        <item>角度制</item>
+        <item>弧度提出π</item>
+    </string-array>
+
+    <string-array name="complex_result_format">
+        <item>代数形式</item>
+        <item>极坐标形式</item>
+    </string-array>
+
+</resources>

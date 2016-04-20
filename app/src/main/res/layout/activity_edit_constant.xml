@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/PageBackground"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_weight="1"
+            android:background="@color/ButtonNormal"
+            android:text="取消"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/btnOK"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="1"
+            android:background="@color/ButtonNormal"
+            android:text="保存"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:text="常数名（避免与数字、运算符号等混淆；支持中文）"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/edtName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/boundary_brown"
+                android:hint="如：G"
+                android:padding="10dp"
+                android:textColor="#ffcc3333"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:text="数值"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/edtValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/boundary_brown"
+                android:hint="如：6.67259E-11"
+                android:padding="10dp"
+                android:textColor="#ffcc3333"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:text="说明（可选）"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/edtDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/boundary_brown"
+                android:hint="如：万有引力常量"
+                android:padding="10dp"
+                android:textColor="#ffcc3333"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

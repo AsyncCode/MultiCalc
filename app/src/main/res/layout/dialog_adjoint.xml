@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择矩阵："
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/normal_text_size" />
+
+
+        <Spinner
+            android:id="@+id/spnSource"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:spinnerMode="dropdown"
+            android:textSize="@dimen/normal_text_size" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="结果赋值给："
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/normal_text_size" />
+
+
+        <Spinner
+            android:id="@+id/spnTarget"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:spinnerMode="dropdown"
+            android:textSize="@dimen/normal_text_size" />
+    </TableRow>
+
+    <TableRow>
+
+        <Button
+            android:id="@+id/btnCancel"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="取消"
+            android:textSize="@dimen/normal_text_size" />
+
+        <Button
+            android:id="@+id/btnOK"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="确认"
+            android:textSize="@dimen/normal_text_size" />
+    </TableRow>
+
+</TableLayout>

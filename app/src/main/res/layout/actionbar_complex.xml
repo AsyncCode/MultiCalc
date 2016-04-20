@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Spinner
+        android:id="@+id/spnAngularUnit"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:entries="@array/complex_angular_unit"
+        android:spinnerMode="dropdown" />
+
+    <Spinner
+        android:id="@+id/spnResultFormat"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toEndOf="@id/spnAngularUnit"
+        android:entries="@array/complex_result_format"
+        android:spinnerMode="dropdown" />
+
+
+    <ImageView
+        android:id="@+id/btnFindMore"
+        android:layout_width="@dimen/actionbar_height"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/btn_find_more" />
+
+    <ImageView
+        android:id="@+id/btnTextSize"
+        android:layout_width="@dimen/actionbar_height"
+        android:layout_height="match_parent"
+        android:layout_toStartOf="@id/btnFindMore"
+        android:scaleType="centerInside"
+        android:src="@drawable/btn_font_size" />
+
+</RelativeLayout>

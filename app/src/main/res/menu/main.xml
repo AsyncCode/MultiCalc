@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/complexCalc"
+        android:title="复数运算" />
+
+    <item
+        android:id="@+id/matrix"
+        android:title="矩阵运算" />
+
+    <item
+        android:id="@+id/copyright"
+        android:title="版权声明" />
+    <item
+        android:id="@+id/update"
+        android:title="检查更新" />
+
+</menu>

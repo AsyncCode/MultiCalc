@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/PageBackground">
+
+    <LinearLayout
+        android:id="@+id/saveAndCancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/black"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_weight="1"
+            android:background="@color/ButtonNormal"
+            android:text="取消"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/btnOK"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="1"
+            android:background="@color/ButtonNormal"
+            android:text="保存"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rowOperation"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnAddition"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/ButtonNormal"
+            android:padding="0dp"
+            android:text="+"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnSubtraction"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/ButtonNormal"
+            android:padding="0dp"
+            android:text="-"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnMultiplication"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/ButtonNormal"
+            android:padding="0dp"
+            android:text="×"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnDivision"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/ButtonNormal"
+            android:padding="0dp"
+            android:text="÷"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnPow"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/ButtonNormal"
+            android:padding="0dp"
+            android:text="^"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnRoot"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/ButtonNormal"
+            android:padding="0dp"
+            android:text="√"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnBrackets"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/ButtonNormal"
+            android:padding="0dp"
+            android:text="( )"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/rowOperation"
+        android:layout_below="@id/saveAndCancel">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:text="函数名（避免与数字、运算符号等混淆；支持中文）"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/edtName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/boundary_brown"
+                android:hint="如：SomeFunction"
+                android:padding="10dp"
+                android:textColor="#ffcc3333"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:text="参数列表（英文逗号分割）"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/edtParaList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/boundary_brown"
+                android:hint="如：参数1,A"
+                android:padding="10dp"
+                android:textColor="#ffcc3333"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:text="表达式（运算符使用英文符号）"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/edtExpression"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/boundary_brown"
+                android:hint="如：e^(-1×参数1)×sinA"
+                android:padding="10dp"
+                android:textColor="#ffcc3333"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:text="说明（可选）"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/edtDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/boundary_brown"
+                android:hint="如：瞎编用来举例子的函数"
+                android:padding="10dp"
+                android:textColor="#ffcc3333"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

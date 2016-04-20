@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.multicalc">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="MultiCalc"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".basic_calc.ui.MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".basic_calc.ui.CustomManageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".basic_calc.ui.EditFunctionActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".basic_calc.ui.EditConstantActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".other.CopyrightActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".complex.ui.ComplexActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".other.ComplexFAQActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".matrix.ui.MatrixActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".other.MatrixFAQActivity"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>
