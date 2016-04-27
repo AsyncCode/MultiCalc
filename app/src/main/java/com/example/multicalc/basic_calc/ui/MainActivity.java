@@ -218,7 +218,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 mEdt.insert("ln");
                 break;
             case R.id.btnLog:
-                mEdt.insert("log(,)", -1);
+                mEdt.insert("log(,)", -2);
                 break;
 
             case R.id.btnFactorial:
